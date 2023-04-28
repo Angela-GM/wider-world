@@ -1,12 +1,12 @@
 /* Fonts */
 @font-face {
     font-family: 'Wizard';
-    src: url('/fonts/wizard/WizardWorld-Simplified.ttf') format('ttf');
+    src: url('/fonts/wizard/WizardWorld-Simplified.ttf') format('truetype');
     font-display: swap;
 }
 @font-face {
     font-family: 'Chivo';
-    src: url('/fonts/chivo/Chivo-VariableFont_wght.ttf') format('ttf');
+    src: url('/fonts/chivo/Chivo-VariableFont_wght.ttf') format('truetype');
     font-display: swap;
 }
 
@@ -79,7 +79,7 @@ body {
 
 .logo h2 {
     color: aliceblue;
-    font-family: 'Wizard', serif;
+    font-family: 'Wizard', sans-serif;
 }
 
 .hero-box {
