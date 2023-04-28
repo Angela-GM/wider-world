@@ -1,7 +1,7 @@
 /* Fonts */
 @font-face {
-    font-family: 'Candara';
-    src: url('/fonts/candara/Candara.ttf') format('ttf');
+    font-family: 'Wizard';
+    src: url('/fonts/wizard/WizardWorld-Simplified.ttf') format('ttf');
     font-display: swap;
 }
 @font-face {
@@ -24,9 +24,6 @@ body {
     font-size: 18px;
 }
 
-h1 {
-    font-family: 'Candara', sans-serif;
-}
 
 .logo img {
     width: 100px;
@@ -82,6 +79,7 @@ h1 {
 
 .logo h2 {
     color: aliceblue;
+    font-family: 'Wizard', serif;
 }
 
 .hero-box {
