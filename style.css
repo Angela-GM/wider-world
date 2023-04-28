@@ -1,6 +1,33 @@
+/* Fonts */
+@font-face {
+    font-family: 'Candara';
+    src: url('/fonts/candara/Candara.ttf') format('ttf');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Chivo';
+    src: url('/fonts/chivo/Chivo-VariableFont_wght.ttf') format('ttf');
+    font-display: swap;
+}
+
+
 /* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Chivo', sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    font-family: 'Candara', sans-serif;
+}
+
+.logo img {
+    width: 100px;
 }
