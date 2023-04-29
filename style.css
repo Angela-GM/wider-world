@@ -1,4 +1,4 @@
-/* Fonts */
+/*  ----------- Fonts ----------- */
 @font-face {
     font-family: 'Wizard';
     src: url('/fonts/wizard/WizardWorld-Simplified.ttf') format('truetype');
@@ -10,8 +10,7 @@
     font-display: swap;
 }
 
-
-/* Reset */
+/*----------- Reset------------- */
 * {
     margin: 0;
     padding: 0;
@@ -19,42 +18,33 @@
     text-decoration: none;
 }
 
+/* -------- Body and Main -------- */
 body {
+    width: 100%;
+    height: 100vh; 
+}
+/* OJO comprobar fuente! candar o chivo?????????? */
+main {
     font-family: 'Chivo', sans-serif;
     font-size: 18px;
-}
-
-
-.logo img {
-    width: 100px;
-}
-
-#hero{
-    widows: 100%;
-    height: 100vh;
-    background-image: linear-gradient(0deg, rgba(37, 29, 29, 0.44), rgba(37,29,29,0.44)),
-    url('https://res.cloudinary.com/drjyg98uv/image/upload/v1682682847/wider-world-web/concepto-libro-cuento-hadas-magi_lmmcca.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    max-width: 1140px;
+    margin: 0 auto;
     padding-top: 32px;
 }
 
-.container {
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
+/* -------- Navigation bar ------- */
 .navbar {
     display: flex;
+    position: relative;
     justify-content: space-between;
     margin-bottom: 100px;
+    font-size: 18px;
+    z-index: 4;
 }
 
 .navbar .menu a:not(:last-child){
     color: white;
     margin-left: 20px;
-    font-size: 14px;
     transition-duration: 0.4s;
     letter-spacing: 0.5px;
 }
@@ -68,7 +58,6 @@ body {
     color: white;
     margin-left: 20px;
     padding: 10px 25px;
-    font-size: 14px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 50px;
 }
@@ -77,50 +66,157 @@ body {
     color: #2e2c2c;
 }
 
+/* LOGO nav bar */
+.logo img {
+    width: 100px;
+}
+
 .logo h2 {
     color: aliceblue;
     font-family: 'Wizard', sans-serif;
+    display:block;
+    position: relative;
+    z-index: 4;
 }
 
-.hero-box {
+/*  ------- Principal section ------- */
+.main_section {
     width: 50%;
     margin-top: 200px;
 }
 
-.hero-box .hero-heading {
-    color: white;
-    font-size: 50px;
-    line-height: 65px;
-    font-family: 'Wizard', serif;
-}
-
-.hero-box .hero-desc {
-    color: white;
-    font-size: 18px;
-    line-height: 27px;
-    padding: 30px 0;
-}
-
-.hero-box .btn-box {
+/* -------- main login & signup -------- */
+.main_section .btn-box {
     margin-top: 60px;
+    display:block;
+    position: relative;
+    z-index: 3;
 }
 
-.hero-box .cta-btn {
+.main_section .cta-btn {
     background: white;
     margin-right: 30px;
     padding: 15px 40px;
     border-radius: 50px;
     color:#2e2c2c;
+    z-index: 3;
 }
 
-.hero-box .cta-btn:hover {
+.main_section .cta-btn:hover {
     background: rgba(255, 255, 255, 0.2);
     color: white;
-
+    z-index: 3;
 }
 
-.hero-box .login {
+.main_section .login {
     background: transparent;
     border: 1px solid white;
     color: white;
+    z-index: 3;
+}
+
+/*  -------- Title - text -------- */
+.magic_txt .hero-heading {
+    font-family: 'Wizard', serif;
+    font-size: 50px;
+    line-height: 65px;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+    color: white;
+    /* Make sure text is infront of background images */
+    display:block;
+    position: relative;
+    z-index: 3;
+}
+
+.magic_txt spam {
+    font-size: 50px;
+    line-height: 65px;
+    font-family: 'Wizard', serif;
+    animation-name: brillo;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    display:inline-block;
+    position: relative;
+    margin-right: 10px;
+    letter-spacing: -12px;;
+    z-index: 3;
+}
+
+/* --------- Animation effects: txt bright --------- */
+.magic_txt {
+    --colorBlack: #040306;
+    --colorGold: #ee9207;
+    --colorWhite: white;
+}
+
+.magic_txt spam:nth-of-type(1) {
+    animation-delay: 0.50s;
+}
+.magic_txt spam:nth-of-type(2) {
+    animation-delay: 0.8s;
+}
+.magic_txt spam:nth-of-type(3) {
+    animation-delay: 1.1s;
+}
+.magic_txt spam:nth-of-type(4) {
+    animation-delay: 1.4s;
+}
+.magic_txt spam:nth-of-type(5) {
+    animation-delay: 1.7s;
+}
+
+@keyframes brillo {
+    0% {
+        color: #d2a233;
+        text-shadow: 0 0 12px var(--colorGold),
+         0 0 50px var(--colorGold),
+         0 0 10px var(--colorGold);
+    }
+    10%, 90% {
+        color: var(--colorWhite);
+        text-shadow: none;
+    }
+}
+
+/* --------- Animation effects: Clouds move --------- */
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+
+/* @keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+} */
+
+.main_background,.stars, .twinkling, .clouds {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+.main_background{
+    background:linear-gradient(0deg, rgba(37, 29, 29, 0.44), rgba(37,29,29,0.44)), url('https://res.cloudinary.com/drjyg98uv/image/upload/v1682682847/wider-world-web/concepto-libro-cuento-hadas-magi_lmmcca.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+/* .stars {
+  background:url(img/stars.png) repeat top center;
+  z-index:1;
+} */
+.clouds{
+    background:transparent url(img/clouds.png) repeat top center;
+    z-index:3;
+    opacity: .4;
+    animation-duration: 800s;
+    animation:move-clouds-back 150s linear infinite;
 }

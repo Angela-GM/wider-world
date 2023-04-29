@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Group 4">
+    <meta name="description" content="Project: Travel Agency">
     <!-- Style CSS -->
     <link rel="stylesheet" href="style.css" />
+
     <!-- Preload Fonts -->
     <link
 		rel="preload"
@@ -13,44 +16,57 @@
 		as="font"
 		type="font/ttf"
 		crossOrigin="anonymous">
-	</link>
+	  </link>
     <link
 		rel="preload"
 		href="/fonts/chivo/Chivo-VariableFont_wght.ttf"
 		as="font"
 		type="font/ttf"
 		crossOrigin="anonymous">
-	</link>
+	  </link>
+
     <title>Wider World</title>
+    <!-- logo icon en la barra de titulo -->
+    <link rel="icon" href="img/logo.png"> 
   </head>
+
   <body>
-    <!-- Hero section -->
-    <section id="hero">
-      <!-- Container -->
-      <div class="container">
-        <!-- Navbar -->
-        <div class="navbar">
-          <div class="logo">
-            <h2>Wider World</h2>
-            <!-- <img src="./img/logo-wider-world.png" alt="Logo Wider World" /> -->
-          </div>
-          <div class="menu">
-            <a href="#">About</a>
-            <a href="#">LogIn</a>
-            <a href="#" class="btn-signup">Sign Up</a>
-          </div>
+    <main>
+      <!-- ------BACKGROUND COVER------- -->
+      <section class="cover_bk">
+        <div class="main_background"></div>
+        <div class="stars"></div>
+        <div class="twinkling"></div> 
+        <div class="clouds"></div>
+      </section>
+      <!-- ----------HEADER LOGO--------- -->
+      <section class="navbar">
+        <div class="logo">
+          <h2>Wider World</h2>
+          <!-- <img src="./img/logo-wider-world.png" alt="Logo Wider World" /> -->
         </div>
-        <!-- Navbar end -->
-        <!-- Hero box -->
-        <div class="hero-box">
-          <h1 class="hero-heading">We make MAGIC happen</h1>
-          <div class="btn-box">
-            <a href="#" class="cta-btn login">Login</a>
-            <a href="#" class="cta-btn signup">Signup</a>
-          </div>
+        <div class="menu">
+          <a href="#">About</a>
+          <a href="#">LogIn</a>
+          <a href="#" class="btn-signup">Sign Up</a>
         </div>
-      </div>
-    </section>
-    <!-- Hero section end -->
+      </section>
+      <!-- ---------Main Section---------- -->
+      <section class="main_section">
+        <container class="magic_txt">
+          <h1 class="hero-heading">We make</h1>
+          <spam>M</spam>
+          <spam>A</spam>
+          <spam>G</spam>
+          <spam>I</spam>
+          <spam>C</spam>
+          <h1 class="hero-heading">happen</h1>
+        </container>
+        <div class="btn-box">
+          <a href="#" class="cta-btn login">Log in</a>
+          <a href="#" class="cta-btn signup">Sign up</a>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
