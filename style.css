@@ -56,7 +56,11 @@ main {
 
 /* Position title text */
 .main_section {
-    padding-top: 25%;
+    padding-top: 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* -------- Navigation bar ------- */
@@ -91,7 +95,7 @@ main {
     background-position: top;
     /* background-color: black; */
     /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15); */
-    z-index: 3;
+    /* z-index: 3; */
     margin-bottom: 100%;
   }
 
@@ -141,9 +145,9 @@ main {
 }
 
 /*  ------- Principal section ------- */
-.main_section {
+/* .main_section {
     width: 50%;
-}
+} */
 
 /* -------- main login & signup -------- */
 .main_section .btn-box {
@@ -155,6 +159,7 @@ main {
 
 .main_section .cta-btn {
     background: white;
+    font-size: 0.9rem;
     margin-right: 30px;
     padding: 15px 40px;
     border-radius: 50px;
@@ -179,7 +184,7 @@ main {
 
 .magic_txt .hero-heading {
     font-family: 'Wizard', serif;
-    font-size: 50px;
+    font-size: 2.5rem;
     line-height: 65px;
     word-spacing: 5px;
     letter-spacing: 5px;
@@ -188,6 +193,8 @@ main {
     display:block;
     position: relative;
     z-index: 1;
+    width: 100%;
+    text-align: center;
 }
 
 .magic_txt span {
@@ -292,3 +299,57 @@ main {
     background: linear-gradient(0deg, rgba(37, 29, 29, .44), rgba(37,29,29,.44));
     margin-top: 500px;
 }
+
+
+
+
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 768px) {
+    .magic_txt .hero-heading {
+        font-size: 2.6rem;
+        line-height: 65px;
+        word-spacing: 5px;
+        letter-spacing: 5px;
+    }
+
+    .main_section {
+        width: 50%;
+    }
+
+    .cta-btn {
+        font-size: 1.1rem;
+        margin-right: 30px;
+        padding: 10px 30px;
+
+    }
+
+
+
+}
+@media only screen and (min-width: 1024) {
+    .magic_txt .hero-heading {
+        font-size: 3rem;
+        line-height: 65px;
+        word-spacing: 5px;
+        letter-spacing: 5px;
+    }
+
+    .main_section {
+        width: 60%;
+        padding-top: 25%;
+    }
+
+
+
+
+}
+
+@media only screen and (min-width: 1440px) {
+    .main_section {
+        width: 70%;
+    }
+
+
+}
+
