@@ -8,7 +8,6 @@
     <meta name="description" content="Project: Travel Agency">
     <!-- Style CSS -->
     <link rel="stylesheet" href="style.css" />
-
     <!-- Preload Fonts -->
     <link
 		rel="preload"
@@ -32,40 +31,70 @@
 
   <body>
     <main>
-      <!-- ------BACKGROUND COVER------- -->
-      <section class="cover_bk">
-        <div class="main_background"></div>
-        <div class="stars"></div>
-        <div class="twinkling"></div> 
-        <div class="clouds"></div>
+      <!-- ------*** FIRST PAGE - HERO ***------- -->
+      <section id="hero-page">
+        <!-- ------BACKGROUND COVER------- -->
+        <section class="cover_bk">
+          <div class="header-background"></div>
+          <div class="main_background"></div>
+          <!-- <div class="stars"></div>
+          <div class="twinkling"></div>  -->
+          <div class="clouds"></div>
+        </section>
+        <!-- ----------HEADER LOGO--------- -->
+        <div class="navbar">
+          <header class="header-main">
+            <div class="header-logo">
+              <h2>Wider World</h2>
+              <!-- <img src="./img/logo-wider-world.png" alt="Logo Wider World" /> -->
+            </div>
+            <nav class="header-menu">
+              <a href="#">About</a>
+              <a href="#">LogIn</a>
+              <a href="#" class="btn-signup">Sign Up</a>
+            </nav>
+          </header>
+          <!-- scroll Effect to show the background from navbar -->
+          <script defer>
+            const headerBackground = document.querySelector('.header-background');
+
+            window.addEventListener('scroll', () => {
+              if (window.scrollY > 100) {
+                headerBackground.classList.add('header-background');
+              } else {
+                headerBackground.classList.remove('header-background');
+              }
+            });
+          </script>
+        </div>  
+        <!-- ---------Main Section---------- -->
+        <section class="main_section">
+          <div class="magic_txt">
+            <h1 class="hero-heading">We make</h1>
+            <span>M</span>
+            <span>A</span>
+            <span>G</span>
+            <span>I</span>
+            <span>C</span>
+            <h1 class="hero-heading">happen</h1>
+          </div>
+          <div class="btn-box">
+            <a href="#" class="cta-btn login">Log in</a>
+            <a href="#" class="cta-btn signup">Sign up</a>
+          </div>
+        </section>
       </section>
-      <!-- ----------HEADER LOGO--------- -->
-      <section class="navbar">
-        <div class="logo">
-          <h2>Wider World</h2>
-          <!-- <img src="./img/logo-wider-world.png" alt="Logo Wider World" /> -->
-        </div>
-        <div class="menu">
-          <a href="#">About</a>
-          <a href="#">LogIn</a>
-          <a href="#" class="btn-signup">Sign Up</a>
-        </div>
-      </section>
-      <!-- ---------Main Section---------- -->
-      <section class="main_section">
-        <container class="magic_txt">
-          <h1 class="hero-heading">We make</h1>
-          <spam>M</spam>
-          <spam>A</spam>
-          <spam>G</spam>
-          <spam>I</spam>
-          <spam>C</spam>
-          <h1 class="hero-heading">happen</h1>
-        </container>
-        <div class="btn-box">
-          <a href="#" class="cta-btn login">Log in</a>
-          <a href="#" class="cta-btn signup">Sign up</a>
-        </div>
+
+
+      <!-- ------**** SECOND PAGE - HOME PAGE ***------- -->
+      <section id="home-page">
+        <div class="second-background"></div>
+          <div class="dark-background-effect"></div>
+          <div class="stars"></div>
+          <div class="twinkling"></div>
+      </div>
+        <p>
+        </p>
       </section>
     </main>
   </body>

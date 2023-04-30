@@ -18,60 +18,121 @@
     text-decoration: none;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 /* -------- Body and Main -------- */
 body {
     width: 100%;
-    height: 100vh; 
+    height: 1000vh;
+    overflow-y: scroll;
+    margin:auto;
+    z-index: 0;
 }
-/* OJO comprobar fuente! candar o chivo?????????? */
+
+/* -------- Scroll Bar -------- */
+/* Estilize a barra de rolagem */
+body::-webkit-scrollbar {
+    width: 12px;
+  }
+
+body::-webkit-scrollbar-thumb {
+background-color: #555;
+border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+background-color: #383737;
+}
+
 main {
     font-family: 'Chivo', sans-serif;
     font-size: 18px;
     max-width: 1140px;
     margin: 0 auto;
-    padding-top: 32px;
+}
+
+/* Position title text */
+.main_section {
+    padding-top: 25%;
 }
 
 /* -------- Navigation bar ------- */
-.navbar {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    margin-bottom: 100px;
-    font-size: 18px;
-    z-index: 4;
-}
 
-.navbar .menu a:not(:last-child){
+
+  .header-main {
+    display: flex;
+    position: fixed;
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 20px 0px;
+    z-index: 3;
+    transition: all 0.5s;
     color: white;
-    margin-left: 20px;
+  }
+  
+  .header-background {
+    display: flex;
+    position: fixed;
+    left:0;
+    width: 100%;
+    padding: 50px 0px;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(37, 29, 29, 0.44), rgba(37,29,29,0.44)), 
+    url('https://res.cloudinary.com/drjyg98uv/image/upload/v1682682847/wider-world-web/concepto-libro-cuento-hadas-magi_lmmcca.jpg');
+    background-position: top;
+    /* background-color: black; */
+    /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15); */
+    z-index: 3;
+    margin-bottom: 100%;
+  }
+
+ .header-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+  }
+
+.header-main .header-menu a:not(:last-child){
+    color: white;
+    margin-left: 0px;
+    margin-right: 20px;
     transition-duration: 0.4s;
     letter-spacing: 0.5px;
 }
 
-.navbar .menu a:not(:last-child):hover {
+.header-main .header-menu a:not(:last-child):hover {
     border-bottom: 2px solid white;
-    padding-bottom: 10px;    
+    /* padding: 10px;     */
 }
 
-.navbar .menu .btn-signup {
+.header-main .header-menu .btn-signup {
     color: white;
     margin-left: 20px;
     padding: 10px 25px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 50px;
 }
-.navbar .menu .btn-signup:hover {
+.header-main .header-menu .btn-signup:hover {
     background: white;
     color: #2e2c2c;
 }
 
 /* LOGO nav bar */
-.logo img {
+/* .header-logo img {
     width: 100px;
-}
+} */
 
-.logo h2 {
+.header-logo h2 {
     color: aliceblue;
     font-family: 'Wizard', sans-serif;
     display:block;
@@ -82,7 +143,6 @@ main {
 /*  ------- Principal section ------- */
 .main_section {
     width: 50%;
-    margin-top: 200px;
 }
 
 /* -------- main login & signup -------- */
@@ -90,7 +150,7 @@ main {
     margin-top: 60px;
     display:block;
     position: relative;
-    z-index: 3;
+    z-index: 2;
 }
 
 .main_section .cta-btn {
@@ -99,23 +159,24 @@ main {
     padding: 15px 40px;
     border-radius: 50px;
     color:#2e2c2c;
-    z-index: 3;
+    z-index: 2;
 }
 
 .main_section .cta-btn:hover {
     background: rgba(255, 255, 255, 0.2);
     color: white;
-    z-index: 3;
+    z-index: 2;
 }
 
 .main_section .login {
     background: transparent;
     border: 1px solid white;
     color: white;
-    z-index: 3;
+    z-index: 2;
 }
 
 /*  -------- Title - text -------- */
+
 .magic_txt .hero-heading {
     font-family: 'Wizard', serif;
     font-size: 50px;
@@ -126,10 +187,10 @@ main {
     /* Make sure text is infront of background images */
     display:block;
     position: relative;
-    z-index: 3;
+    z-index: 1;
 }
 
-.magic_txt spam {
+.magic_txt span {
     font-size: 50px;
     line-height: 65px;
     font-family: 'Wizard', serif;
@@ -141,29 +202,38 @@ main {
     position: relative;
     margin-right: 10px;
     letter-spacing: -12px;;
-    z-index: 3;
+    z-index: 1;
 }
 
-/* --------- Animation effects: txt bright --------- */
+/* --------- Animation effects: txt --------- */
+.hide-text {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .show-text {
+    opacity: 1;
+  }
+
 .magic_txt {
     --colorBlack: #040306;
     --colorGold: #ee9207;
     --colorWhite: white;
 }
 
-.magic_txt spam:nth-of-type(1) {
+.magic_txt span:nth-of-type(1) {
     animation-delay: 0.50s;
 }
-.magic_txt spam:nth-of-type(2) {
+.magic_txt span:nth-of-type(2) {
     animation-delay: 0.8s;
 }
-.magic_txt spam:nth-of-type(3) {
+.magic_txt span:nth-of-type(3) {
     animation-delay: 1.1s;
 }
-.magic_txt spam:nth-of-type(4) {
+.magic_txt span:nth-of-type(4) {
     animation-delay: 1.4s;
 }
-.magic_txt spam:nth-of-type(5) {
+.magic_txt span:nth-of-type(5) {
     animation-delay: 1.7s;
 }
 
@@ -187,12 +257,7 @@ main {
     to {background-position:10000px 0;}
 }
 
-/* @keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
-} */
-
-.main_background,.stars, .twinkling, .clouds {
+.main_background,/*.stars, .twinkling,*/ .clouds {
   position:absolute;
   top:0;
   left:0;
@@ -203,20 +268,27 @@ main {
   display:block;
 }
 .main_background{
-    background:linear-gradient(0deg, rgba(37, 29, 29, 0.44), rgba(37,29,29,0.44)), url('https://res.cloudinary.com/drjyg98uv/image/upload/v1682682847/wider-world-web/concepto-libro-cuento-hadas-magi_lmmcca.jpg');
+    background:linear-gradient(0deg, rgba(37, 29, 29, 0.44), rgba(37,29,29,0.44)), 
+    url('https://res.cloudinary.com/drjyg98uv/image/upload/v1682682847/wider-world-web/concepto-libro-cuento-hadas-magi_lmmcca.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     z-index: 0;
 }
-/* .stars {
-  background:url(img/stars.png) repeat top center;
-  z-index:1;
-} */
+
 .clouds{
     background:transparent url(img/clouds.png) repeat top center;
-    z-index:3;
-    opacity: .4;
+    z-index:1;
+    opacity: .6;
     animation-duration: 800s;
     animation:move-clouds-back 150s linear infinite;
+}
+
+
+/* ---------******---SECOND PAGE - HOME PAGE-----*****------------ */
+#home-page {
+    position: relative;
+    height: 100vh; /* Definindo a altura para exibir o gradiente */
+    background: linear-gradient(0deg, rgba(37, 29, 29, .44), rgba(37,29,29,.44));
+    margin-top: 500px;
 }
