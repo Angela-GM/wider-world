@@ -11,9 +11,9 @@ Nuestros viajes están diseñados para los entusiastas de los cuentos de hadas q
 
 
 
-## 4 Tecnologias en el desarrollo
+## 4 Tecnologías en el desarrollo
 
-Hemos utilizado Figma y VSCode (HTML5, CSS.
+Hemos utilizado Figma, VSCode como herramientas de diseño y desarrollo y HTML5 y CSS para la creación de la página.
 
 ## 5 Retos enfrentados y características que se esperan desarrollar en el futuro
 
@@ -23,12 +23,12 @@ Nos hemos enfrentado a:
 - x
 - x
 
-## 6 url de la aplicacion desplegada
+## 6 Url de la aplicación desplegada
 **https://wider-world.vercel.app/#**
 
-## 1titulo del proyecto +-
-## 2 descripcion del proyecto +-
-## 4 Tecnologias en el desarrollo
+## 1 Título del proyecto (DONE)
+## 2 Descripción del proyecto (DONE)
+## 4 Tecnologías en el desarrollo (DONE)
 
 
 
