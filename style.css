@@ -149,6 +149,11 @@ main {
     color: #2e2c2c;
 }
 
+.header-menu>.btn-yellow {
+    font-size: 0.8rem;
+}
+
+
 
 
 .header-logo h2 {
@@ -390,6 +395,15 @@ main {
     font-size: 18px;
     text-align: center;
     color: #141313;
+}
+
+.btn-yellow:hover {
+    background-color: #904949;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+
 
 }
 
@@ -483,6 +497,11 @@ ul{
     color:white;
 }
 
+.about_txt {
+    animation:scale-up-center 0.4s;
+}
+/* Animation about_txt */
+@keyframes scale-up-center{ 0%{transform:scale(.5)} 100%{transform:scale(1)} }
 .about_txt h2 {
     font-family: 'Wizard', serif;
 }
@@ -491,12 +510,17 @@ ul{
   width: 95%;
   margin-right: 60px;
   margin-bottom: 10px;
+  animation:bounce-bottom .9s linear both
 }
+
+/* animation lib_image */
+@keyframes bounce-bottom{0%{transform:translateY(45px);animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{transform:translateY(24px);animation-timing-function:ease-in}65%{transform:translateY(12px);animation-timing-function:ease-in}82%{transform:translateY(6px);animation-timing-function:ease-in}93%{transform:translateY(4px);animation-timing-function:ease-in}25%,55%,75%,87%{transform:translateY(0);animation-timing-function:ease-out}100%{transform:translateY(0);animation-timing-function:ease-out;opacity:1}}
 
 .lib_image img{
     width: 100%;
     height: auto;
     max-width: 100%;
+    border-radius: 5px;
 }
 
 .our_team {
@@ -519,7 +543,20 @@ ul{
     width: 120px;
     height: 120px;
     border-radius: 50%;
+    cursor: pointer;
   }
+
+  .team_member img:hover {
+    animation:rotate-center 0.4s
+
+  }
+
+  /* Animation team member */
+
+  @keyframes rotate-center{
+    0%{transform:rotate(0)}
+    100%{transform:rotate(360deg)}
+    }
 
 .team_member p {
     position: relative;
@@ -606,7 +643,11 @@ ul{
     }
 
     .results {
-        margin-top: 0;
+        margin-top: -1rem;
+    }
+
+    .header-menu>.btn-yellow {
+        font-size: 1rem;
     }
 
     /* .main_about {
