@@ -1,12 +1,12 @@
 /*  ----------- Fonts ----------- */
 @font-face {
     font-family: 'Wizard';
-    src: url('/fonts/wizard/WizardWorld-Simplified.ttf') format('truetype');
+    src: url('./fonts/wizard/WizardWorld-Simplified.ttf') format('truetype');
     font-display: swap;
 }
 @font-face {
-    font-family: 'Chivo';
-    src: url('/fonts/chivo/Chivo-VariableFont_wght.ttf') format('truetype');
+    font-family: 'Candara';
+    src: url('./fonts/candara/Candara.ttf') format('truetype');
     font-display: swap;
 }
 
@@ -48,7 +48,7 @@ background-color: #383737;
 }
 
 main {
-    font-family: 'Chivo', sans-serif;
+    font-family: 'Candara', sans-serif;
     font-size: 18px;
     max-width: 1140px;
     margin: 0 auto;
@@ -194,7 +194,7 @@ main {
     position: relative;
     z-index: 1;
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .magic_txt span {
@@ -274,6 +274,11 @@ main {
   height:100%;
   display:block;
 }
+
+.home_background {
+    height: 30%;
+}
+
 .main_background{
     background:linear-gradient(0deg, rgba(37, 29, 29, 0.44), rgba(37,29,29,0.44)), 
     url('https://res.cloudinary.com/drjyg98uv/image/upload/v1682682847/wider-world-web/concepto-libro-cuento-hadas-magi_lmmcca.jpg');
@@ -291,18 +296,10 @@ main {
     animation:move-clouds-back 150s linear infinite;
 }
 
-
-/* ---------******---SECOND PAGE - HOME PAGE-----*****------------ */
-#home-page {
-    position: relative;
-    height: 100vh; /* Definindo a altura para exibir o gradiente */
-    background: linear-gradient(0deg, rgba(37, 29, 29, .44), rgba(37,29,29,.44));
-    margin-top: 500px;
+/*----------------- HOME PAGE -------------------------------- */
+.form-search {
+    display:flex;
 }
-
-
-
-
 
 /* MEDIA QUERIES */
 @media only screen and (min-width: 768px) {
@@ -321,7 +318,6 @@ main {
         font-size: 1.1rem;
         margin-right: 30px;
         padding: 10px 30px;
-
     }
 
 

@@ -4,21 +4,74 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Group 4">
+    <meta name="description" content="Project: Travel Agency">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Preload Fonts -->
+    <link
+		rel="preload"
+		href="./fonts/wizard/WizardWorld-Simplified.ttf"
+		as="font"
+		type="font/ttf"
+		crossOrigin="anonymous">
+	  </link>
+    <link
+		rel="preload"
+		href="./fonts/candara/Candara.ttf"
+		as="font"
+		type="font/ttf"
+		crossOrigin="anonymous">
+	  </link>
+
     <title>Wider World - Home</title>
+    <!-- logo icon en la barra de titulo -->
+    <link rel="icon" href="img/logo.png"> 
   </head>
   <body>
+      <main>
+        <!-- ------*** FIRST PAGE - HERO ***------- -->
+        <section id="home-page">
+          <!-- ------BACKGROUND COVER------- -->
+          <section class="cover_bk">
+            <div class="header-background"></div>
+            <div class="main_background home_background">
+              <div class="form-search">
+                <form>
+                  <input type="text" placeholder="What do you feel like?">
+                  <input type="number" placeholder="Number of passengers">
+                  <input type="text" placeholder="When does it start?">
+                  <button>Let's go!</button>
 
-    <!-- ------**** SECOND PAGE - HOME PAGE ***------- -->
-      <section id="home-page">
-        <div class="second-background"></div>
-          <div class="dark-background-effect"></div>
-          <div class="stars"></div>
-          <div class="twinkling"></div>
-      </div>
-        <p>
-        </p>
-      </section>
+                </form>
+
+              </div>
+              
 
 
+            </div>
+            <!-- <div class="stars"></div>
+            <div class="twinkling"></div>  -->
+            <!-- <div class="clouds"></div> -->
+          </section>
+          <!-- ----------HEADER LOGO--------- -->
+          <div class="navbar">
+            <header class="header-main">
+              <div class="header-logo">
+                <h2>
+                  <a href="./home.html">Wider World</a>
+                </h2>
+                <!-- <img src="./img/logo-wider-world.png" alt="Logo Wider World" /> -->
+              </div>
+              <nav class="header-menu">
+                <a href="#">About</a>
+                <a href="#">LogIn</a>
+                <a href="#" class="btn-signup">Sign Up</a>
+              </nav>
+            </header>
+          </div>  
+        </section>
+        
+      </main>
   </body>
 </html>
