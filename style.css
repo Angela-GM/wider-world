@@ -149,10 +149,7 @@ main {
     color: #2e2c2c;
 }
 
-/* LOGO nav bar */
-/* .header-logo img {
-    width: 100px;
-} */
+
 
 .header-logo h2 {
     color: aliceblue;
@@ -162,10 +159,7 @@ main {
     z-index: 4;
 }
 
-/*  ------- Principal section ------- */
-/* .main_section {
-    width: 50%;
-} */
+
 
 /* -------- main login & signup -------- */
 .main_section .btn-box {
@@ -300,7 +294,7 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    z-index: 0;
+    z-index: 1;
 }
 
 .home_background {
@@ -323,6 +317,8 @@ main {
 
 /*----------------- HOME PAGE -------------------------------- */
 /* Cards */
+/* FORM SEARCH */
+
 .results {
     display: flex;
     flex-wrap: wrap;
@@ -343,7 +339,7 @@ main {
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
     filter: brightness(0.7);
-    z-index: -1;
+    z-index: 0;
    
 
 }
@@ -460,7 +456,7 @@ ul{
     align-items: center;
     background: black;
     background-position: top;
-    z-index: 3;
+    z-index: 1;
     margin-bottom: 100%;
 }
 
