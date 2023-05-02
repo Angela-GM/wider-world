@@ -80,7 +80,6 @@ main {
 
   .header-main {
     display: flex;
-    position: fixed;
     /* max-width: 1140px; */
     width: 100%;
     margin: auto;
@@ -116,6 +115,10 @@ main {
     justify-content: flex-end;
     align-items: center;
     padding: 10px;
+    z-index: 5;
+  }
+  .header-main {
+    position: fixed;
   }
 
 .header-main .header-menu a:not(:last-child){
@@ -326,13 +329,26 @@ main {
 
 .results>.card {
     /* height:30%; */
-    background: hsla(0, 0%, 100%, 0.5);
+    background: hsla(0, 0%, 100%, 0.3);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* Shadow cards */
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+    filter: brightness(0.7);
+    z-index: -3;
+   
+
 }
+
+.results>.card:hover {
+    filter:brightness(1)
+}
+
 
 .results div:nth-child(2){
     padding: 2rem;
@@ -377,6 +393,99 @@ main {
     font-weight: 400;
    }
 
+   footer {
+    background-color: #010101;
+    color: #fff;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    padding: 100px;
+    font-family: 'Candara', sans-serif;
+    text-align: center;
+    margin-top: 2rem;
+}
+li{
+    padding: 30px;
+}
+ul{
+    padding: 5px;
+}
+  
+  .social a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .social a:last-child {
+    margin-right: 0;
+  }
+  
+  .social a:hover {
+    color: #FFBF4D;
+  }
+  
+  .fa-facebook {
+    color: #FFFFFF;
+  }
+  
+  .fa-twitter {
+    color: #FFFFFF;
+  }
+  
+  .fa-instagram {
+    color: #FFFFFF;
+  }
+
+  .copyright{
+    padding: 10px;
+  }
+
+  /* ABOUT */
+  /*  ---------------------ABOUT US PAGE-------------------------- */
+.main_about {
+    display: flex;
+}
+
+.lib_image {
+    margin-right: 80px;
+  }
+
+.main_about img {
+    width: 100%;
+    margin-right:20px;
+  }
+
+.team_member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 100px 0;
+}
+
+.team_member img {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+
+  .team_member p {
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 200px; 
+  }
+
+.our_team {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 
 
@@ -399,6 +508,15 @@ main {
         margin-right: 30px;
         padding: 10px 30px;
     }
+    /* Footer */
+    .social {
+        margin-bottom: 20px;
+      }
+      .header-logo {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 
 
 
@@ -419,12 +537,14 @@ main {
 
 
 
+
 }
 
 @media only screen and (min-width: 1440px) {
     .main_section {
         width: 70%;
     }
+
 
 
 }
