@@ -151,6 +151,7 @@ main {
 
 .header-menu>.btn-yellow {
     font-size: 0.8rem;
+    border: none;
 }
 
 
@@ -334,7 +335,7 @@ main {
     background: rgba(9, 8, 8, 0.6);
     padding: 9px 16px;
     color: #7B7B7B;
-    font-size: 16px;
+    font-size: 13px;
     
 
 }
@@ -372,6 +373,7 @@ main {
 
 .results div:nth-child(2){
     padding: 2rem;
+    text-align: center;
 }
 
 .image {
@@ -387,6 +389,7 @@ main {
 
 .btn-yellow {
     background: #FFB82E;
+    border: none;
     border-radius: 20px;
     padding: 8px 15px;
     font-family: 'Candara';
@@ -568,6 +571,80 @@ ul{
     color: white;
 }
 
+/* MODAL */
+/* Sign up */
+.modal {
+    position:absolute;
+    z-index: 1;
+    width: 366px;
+    background: #FFFFFF;
+    border-radius: 22px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #55124A;
+    border-radius: 10px 10px 0 0;
+    height: 56px;
+    color: white;
+
+}
+
+.modal-main>form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal-main>form>div {
+    margin: 0.3rem 0;
+}
+
+.modal-main>form>div>input {
+    border: 1px solid grey;
+    border-radius: 52px;  
+    padding: 9px 16px;  
+}
+
+.modal-main>form>div>label {
+    font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+}
+
+.modal-main, .modal-header {
+    padding: 2rem;
+}
+
+.modal-main>form>h3 {
+    margin: 2rem 0;
+    font-family: 'Wizard', serif;
+}
+
+#modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+
+
+/* overlay */
+#modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    display: none;
+  }
+
+
+
 /* DETAIL */
 /*  ---------------------TRIP DETAIL PAGE-------------------------- */
 #detail-page {
@@ -578,8 +655,17 @@ ul{
     color: white;
 }
 
+.alice.card {
+    /* width: 100%; */
+    overflow: hidden;
+}
+
+.alice.card>img {
+    max-width: 100%;
+}
+
 .alice-img-det {
-    width: 60%;
+    /* width: 60%; */
     margin-right: 30px;
   }
   
@@ -591,10 +677,12 @@ ul{
 
 .infoPlusBook {
     font-size: 2rem;
-    margin: 30px;
+    margin-top: 30px;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.4); /* Translucent white background */
     border-radius: 10px; /* Rounded corners */
     padding: 30px; /* Adds padding inside the box */
+    overflow: hidden;
   }
 
 .content h1 {
@@ -604,6 +692,8 @@ ul{
   .btn-book {
     margin: 20px;
   }
+
+
 
 /* MEDIA QUERIES */
 @media only screen and (min-width: 768px) {
@@ -648,6 +738,7 @@ ul{
 
     .header-menu>.btn-yellow {
         font-size: 1rem;
+        border: none;
     }
 
     /* .main_about {
