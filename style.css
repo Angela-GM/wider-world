@@ -75,6 +75,9 @@ main {
     height: 30%;
 }
 
+
+
+
 /* -------- Navigation bar ------- */
 
 
@@ -404,8 +407,10 @@ main {
     text-align: center;
     margin-top: 2rem;
 }
+
 li{
-    padding: 30px;
+    padding: 10px;
+    list-style-type: none;
 }
 ul{
     padding: 5px;
@@ -442,20 +447,51 @@ ul{
     padding: 10px;
   }
 
-  /* ABOUT */
-  /*  ---------------------ABOUT US PAGE-------------------------- */
-.main_about {
+/* ABOUT */
+/*  ---------------------ABOUT US PAGE-------------------------- */
+
+.black_navbar {
     display: flex;
+    position: fixed;
+    left:0;
+    width: 100%;
+    padding: 50px 0px;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    background-position: top;
+    z-index: 3;
+    margin-bottom: 100%;
+}
+
+.main_about {
+    padding: 200px 100px 100px 100px;
+    display: flex;
+    justify-content: space-around;
+    color:white;
+}
+
+.about_txt h2 {
+    font-family: 'Wizard', serif;
 }
 
 .lib_image {
-    margin-right: 80px;
-  }
+  width: 95%;
+  margin-right: 60px;
+  margin-bottom: 10px;
+}
 
-.main_about img {
+.lib_image img{
     width: 100%;
-    margin-right:20px;
-  }
+    height: auto;
+    max-width: 100%;
+}
+
+.our_team {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 .team_member {
     display: flex;
@@ -463,7 +499,7 @@ ul{
     justify-content: center;
     align-items: center;
     position: relative;
-    margin: 100px 0;
+
 }
 
 .team_member img {
@@ -473,22 +509,52 @@ ul{
     border-radius: 50%;
   }
 
-  .team_member p {
+.team_member p {
     position: relative;
     margin-top: 10px;
+    margin-bottom: 60px;
     text-align: center;
     width: 100%;
-    max-width: 200px; 
-  }
-
-.our_team {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    max-width: 200px;
+    color: white;
 }
 
+/* DETAIL */
+/*  ---------------------TRIP DETAIL PAGE-------------------------- */
+#detail-page {
+    padding: 200px 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    color: white;
+}
 
+.alice-img-det {
+    width: 60%;
+    margin-right: 30px;
+  }
+  
+.lib_image img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
 
+.infoPlusBook {
+    font-size: 2rem;
+    margin: 30px;
+    background-color: rgba(255, 255, 255, 0.4); /* Translucent white background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 30px; /* Adds padding inside the box */
+  }
+
+.content h1 {
+    font-family: 'Wizard', serif;
+} 
+
+  .btn-book {
+    margin: 20px;
+  }
 
 /* MEDIA QUERIES */
 @media only screen and (min-width: 768px) {
@@ -518,6 +584,24 @@ ul{
         align-items: center;
     }
 
+    /* .main_about {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
+    .lib_image {
+        margin-bottom: 20px;
+      }
+    .about_txt {
+        font-size: 1.1rem;
+        text-align: center;
+      }
+    .team_member {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+    } */
 
 
 }
@@ -537,13 +621,13 @@ ul{
 
 
 
-
 }
 
 @media only screen and (min-width: 1440px) {
     .main_section {
         width: 70%;
     }
+
 
 
 
