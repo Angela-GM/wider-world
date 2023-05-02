@@ -578,7 +578,7 @@ ul{
     z-index: 1;
     width: 366px;
     background: #FFFFFF;
-    border-radius: 22px;
+    border-radius: 10px;
 }
 
 .modal-header {
@@ -607,11 +607,12 @@ ul{
     padding: 9px 16px;  
 }
 
-.modal-main>form>div>label {
+.modal-main>form>div>div>label {
     font-weight: 400;
-font-size: 16px;
-line-height: 20px;
-}
+    font-size: 16px;
+    line-height: 20px;
+
+   }
 
 .modal-main, .modal-header {
     padding: 2rem;
@@ -628,6 +629,19 @@ line-height: 20px;
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
+  }
+
+  #cancel-btn {
+    background: #FFFFFF;
+    border-radius: 4px;
+    align-items: center;
+    padding: 6px 24px;
+    border: none;
+    cursor: pointer;
+  }
+
+  #cancel-btn:hover {
+    border: 1px solid black;
   }
 
 
