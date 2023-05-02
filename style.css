@@ -442,6 +442,50 @@ ul{
     padding: 10px;
   }
 
+  /* ABOUT */
+  /*  ---------------------ABOUT US PAGE-------------------------- */
+.main_about {
+    display: flex;
+}
+
+.lib_image {
+    margin-right: 80px;
+  }
+
+.main_about img {
+    width: 100%;
+    margin-right:20px;
+  }
+
+.team_member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 100px 0;
+}
+
+.team_member img {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+
+  .team_member p {
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 200px; 
+  }
+
+.our_team {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 
 
