@@ -321,13 +321,25 @@ main {
 
 .results>.card {
     /* height:30%; */
-    background: hsla(0, 0%, 100%, 0.5);
+    background: hsla(0, 0%, 100%, 0.3);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* Shadow cards */
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+    filter: brightness(0.7);
+   
+
 }
+
+.results>.card:hover {
+    filter:brightness(1)
+}
+
 
 .results div:nth-child(2){
     padding: 2rem;
