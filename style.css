@@ -372,6 +372,7 @@ main {
 
 .results div:nth-child(2){
     padding: 2rem;
+    text-align: center;
 }
 
 .image {
