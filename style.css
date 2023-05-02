@@ -157,6 +157,7 @@ main {
     display:block;
     position: relative;
     z-index: 4;
+    font-size: 2rem;
 }
 
 
@@ -302,7 +303,7 @@ main {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    height: 20%;
+    height: 30%;
     padding-bottom: 2rem;
     position: fixed;
 }
@@ -318,12 +319,27 @@ main {
 /*----------------- HOME PAGE -------------------------------- */
 /* Cards */
 /* FORM SEARCH */
+.form-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.6rem;
+}
+.form-search > input {
+    background: rgba(9, 8, 8, 0.6);
+    padding: 9px 16px;
+    color: #7B7B7B;
+    font-size: 16px;
+    
+
+}
 
 .results {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
+    margin-top: 3rem;
 }
 
 .results>.card {
@@ -578,6 +594,19 @@ ul{
         display: flex;
         justify-content: space-around;
         align-items: center;
+    }
+
+    .form-search {
+
+        flex-direction: row;
+    }
+
+    .home_background {
+        height: 20%;
+    }
+
+    .results {
+        margin-top: 0;
     }
 
     /* .main_about {
