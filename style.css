@@ -30,6 +30,7 @@ body {
     overflow-y: scroll;
     margin:auto;
     z-index: 0;
+    background-color: #300B2C;
 }
 
 /* -------- Scroll Bar -------- */
@@ -61,6 +62,11 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+#home-page {
+    height: 30%;
 }
 
 /* -------- Navigation bar ------- */
@@ -290,8 +296,9 @@ main {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    height: 30%;
+    height: 20%;
     padding-bottom: 2rem;
+    position: fixed;
 }
 
 .clouds{
@@ -303,6 +310,19 @@ main {
 }
 
 /*----------------- HOME PAGE -------------------------------- */
+/* Cards */
+.results {
+    display: flex;
+}
+
+.results>.card {
+    height:30%;
+}
+
+.image>img {
+    width: 300px;
+}
+
 
 
 /* MEDIA QUERIES */
