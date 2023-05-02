@@ -8,10 +8,10 @@ signupBtn.addEventListener("click", function () {
   modal.style.display = "block";
 });
 
-modalOverlay.addEventListener("click", function () {
-  modalOverlay.style.display = "none";
-  modal.style.display = "none";
-});
+// modalOverlay.addEventListener("click", function () {
+//   modalOverlay.style.display = "none";
+//   modal.style.display = "none";
+// });
 
 cancelBtn.addEventListener("click", function () {
   modalOverlay.style.display = "none";

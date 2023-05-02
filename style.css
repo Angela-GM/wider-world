@@ -589,8 +589,18 @@ ul{
     border-radius: 10px 10px 0 0;
     height: 56px;
     color: white;
-
 }
+.modal-header>p:nth-child(1), .modal-header>div {
+    cursor: pointer;
+}
+
+.modal-header>p:nth-child(3){
+    color: #FFBF4D;
+    font-size: bold;
+    cursor: pointer;
+}
+
+
 
 .modal-main>form {
     display: flex;
@@ -629,6 +639,7 @@ ul{
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
+    z-index: 8;
   }
 
   #cancel-btn {
@@ -653,8 +664,9 @@ ul{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.6);
     display: none;
+    z-index: 4;
   }
 
 
