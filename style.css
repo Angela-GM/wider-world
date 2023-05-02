@@ -275,9 +275,6 @@ main {
   display:block;
 }
 
-.home_background {
-    height: 30%;
-}
 
 .main_background{
     background:linear-gradient(0deg, rgba(37, 29, 29, 0.44), rgba(37,29,29,0.44)), 
@@ -286,6 +283,15 @@ main {
     background-position: center;
     background-size: cover;
     z-index: 0;
+}
+
+.home_background {
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 30%;
+    padding-bottom: 2rem;
 }
 
 .clouds{
@@ -297,9 +303,7 @@ main {
 }
 
 /*----------------- HOME PAGE -------------------------------- */
-.form-search {
-    display:flex;
-}
+
 
 /* MEDIA QUERIES */
 @media only screen and (min-width: 768px) {
