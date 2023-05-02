@@ -9,6 +9,11 @@
     src: url('./fonts/candara/Candara.ttf') format('truetype');
     font-display: swap;
 }
+@font-face {
+    font-family: 'Candara';
+    src: url('/fonts/candara/Candara.ttf') format('truetype');
+    font-display: swap;
+}
 
 /*----------- Reset------------- */
 * {
@@ -31,6 +36,7 @@ body {
     margin:auto;
     z-index: 0;
     background-color: #300B2C;
+    font-family: 'Candara', sans-serif;
 }
 
 /* -------- Scroll Bar -------- */
@@ -51,8 +57,8 @@ background-color: #383737;
 main {
     font-family: 'Candara', sans-serif;
     font-size: 18px;
-    max-width: 1140px;
-    margin: 0 auto;
+    /* max-width: 1140px; */
+    margin: auto 1rem;
 }
 
 /* Position title text */
@@ -75,10 +81,10 @@ main {
   .header-main {
     display: flex;
     position: fixed;
-    max-width: 1140px;
+    /* max-width: 1140px; */
     width: 100%;
     margin: auto;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     font-size: 18px;
     line-height: 20px;
@@ -313,15 +319,65 @@ main {
 /* Cards */
 .results {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .results>.card {
-    height:30%;
+    /* height:30%; */
+    background: hsla(0, 0%, 100%, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.image>img {
-    width: 300px;
+.results div:nth-child(2){
+    padding: 2rem;
 }
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+.image>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.btn-yellow {
+    background: #FFB82E;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-family: 'Candara';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #141313;
+
+}
+
+.btn-cards {
+    margin-top: 2rem;
+}
+
+.card>div>h2{
+    font-family: 'Wizard', serif;
+    color: white; 
+    font-weight: 400;
+   }
+
+   .card>div>p{
+    color: white; 
+    font-weight: 400;
+   }
+
+
 
 
 
