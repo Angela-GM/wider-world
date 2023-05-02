@@ -1,50 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Detalle viaje Alice</title>
-</head>
-<body>
-<section id="home-page">
-        <!-- ----------HEADER LOGO--------- -->
-<div class="navbar">
-    <header class="header-main">
-        <div class="header-logo">
-            <h2><a href="./home.html">Wider World</a></h2>
-              <!-- <img src="./img/logo-wider-world.png" alt="Logo Wider World" /> -->
-        </div>
-        <nav class="header-menu">
-            <a href="#">About</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Group 4">
+    <meta name="description" content="Project: Travel Agency">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Preload Fonts -->
+    <link
+		rel="preload"
+		href="./fonts/wizard/WizardWorld-Simplified.ttf"
+		as="font"
+		type="font/ttf"
+		crossOrigin="anonymous">
+	  </link>
+    <link
+		rel="preload"
+		href="./fonts/candara/Candara.ttf"
+		as="font"
+		type="font/ttf"
+		crossOrigin="anonymous">
+	  </link>
+    <title>Wider World - Alice in Wonderland</title>
+    <!-- logo icon en la barra de titulo -->
+    <link rel="icon" href="img/icon_w.png"> 
+  </head>
+  <body>
+    <!-- ------BACKGROUND NAVBAR COVER------- -->
+    <section class="cover_bk">
+        <div class="black_navbar"></div>
+    </section>
+    <!-- ----------HEADER NAVBAR--------- -->
+    <div class="navbar">
+        <header class="header-main">
+          <div class="header-logo">
+            <h2>
+              <a href="./home.html">Wider World</a>
+            </h2>
+            <!-- <img src="./img/logo-wider-world.png" alt="Logo Wider World" /> -->
+          </div>
+          <nav class="header-menu">
+            <a href="./about.html">About</a>
             <a href="#">LogIn</a>
             <a href="#" class="btn-yellow">Sign Up</a>
-        </nav>
-    </header>
-</div>  
-
-<h1>Alice in Wonderland</h1>
-<p>Alice's adventure in Wonderland is a whimsical and fantastical journey through a world full of strange and curious creatures where nothing is quite as it seems.</p>
-<p>Here's a brief overview of some of the key events in Alice's trip:</p>
-    <li>
-        <ul>Fall down the rabbit hole</ul>
-        <ul>Meet strange characters</ul>
-        <ul>Attend a tea party</ul>
-        <ul>Grow and shrink</ul>
-        <ul>Play croquet with the Queen of Hearts</ul>
-        <ul>Face a trial</ul>
-    </li> 
-<div class="infoPlusBook">
-    <div class="info">
-        <p>3 day trip</p>
-        <p>1-4 passangers</p>
-        <p>Price per person</p>
+          </nav>
+        </header>
     </div>
+    <!-- ----------MAIN--------- -->
+    <main id="detail-page">
+        <container class="alice-img-det">
+            <div class="alice-card">
+                <img src="./img/Alice1.jpg" alt="alice picture">
+                <div class="infoPlusBook">
+                    <p>3 day trip</p>
+                    <p>1-4 passangers</p>
+                    <p>Price per person</p>
+                </div>
+            </div>
+        </container>
 
-<div class="book">
-<button class="book">Book</button>
-</div>
+        <container class="content">
+            <h1>Alice in Wonderland</h1><br>
+            <p>Alice's adventure in Wonderland is a whimsical and fantastical journey through a world full of strange and curious creatures where nothing is quite as it seems.</p><br>
+            <p>Here's a brief overview of some of the key events in Alice's trip:</p><br>
+                <ul>
+                    <li>Fall down the rabbit hole</li>
+                    <li>Meet strange characters</li>
+                    <li>Attend a tea party</li>
+                    <li>Grow and shrink</li>
+                    <li>Play croquet with the Queen of Hearts</li>
+                    <li>Face a trial</li>
+                </ul>
+            <div class="btn-book">
+                <button class="btn-yellow">Book now</button>
+            </div>
+        </container>
+    </main>
 
-</body>
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="header-logo">
+            <h2>Wider World</h2>
+        <div class="container"> 
+            <ul>
+                <li>+34 764536434</li>
+                <li>contact@widerworld.com</ul>
+                <li>About Us</li>
+                <li>FAQs</li>
+                <li>Terms &amp; Conditions</li>
+                <li>Privacy &amp; Cookies</li>
+            </ul>
+        <div class="social">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+        <div class="copyright">
+            <p>&copy; WIDER WORLD DIGITAL 2023</p>
+        </div>
+        </div>
+    </footer>
+    </body>
 </html>
