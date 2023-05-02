@@ -41,6 +41,12 @@ para elegir en función a mis intereses.
 
 ![mockup](mockup/home.png) 
 
+### Trip Details
+
+Un espacio para ver los la información y detalles de los viajes que se ofertan y ver si se alinean con mis intereses.
+
+![mockup](mockup/tripDetail.png) 
+
 ### About us
 
 Un espacio para dar a conocer la visión y los valores de los integrantes del proyecto.
@@ -56,25 +62,27 @@ Un footer que contenga información relevante y enlaces de interés(Contacto, Re
 
 ## 4 Tecnologías en el desarrollo
 
-Hemos utilizado Figma, VSCode como herramientas de diseño y desarrollo y HTML5 y CSS para la creación de la página.
+Hemos utilizado Figma, VSCode como herramientas de diseño y desarrollo y HTML5, CSS y Javascript para la creación de la página.
 
 ## 5 Retos enfrentados y características que se esperan desarrollar en el futuro
 
 Nos hemos enfrentado a:
 
-- x
-- x
-- x
+- Elección del tema, así como el diseño y distribución de la pàgina web y sus distintas ramas.
+- Desarrollo del wireframe tanto en Figma como a código posteriormente. 
+- Instalación de fuentes y dar efectos.
+- Prototipado y ajuste en diferentes dispositivos.
+
+
+Características que se esperan desarrollar en el futuro:
+
+- Mejorar las funcionalidades existentes
+- Implementar el CRUD
+- Conectarlo a una base de datos
 
 ## 6 Url de la aplicación desplegada
 **https://wider-world.vercel.app/#**
 
-## 1 Título del proyecto (DONE)
-## 2 Descripción del proyecto (DONE)
-## 3 Descripción imagenes y url de los mockups (ON PROGRESS)
-## 4 Tecnologías en el desarrollo (DONE)
-## 5 -
-## 6 Url de la aplicación desplegada (DONE)
 
 
 
