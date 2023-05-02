@@ -201,6 +201,11 @@ main {
 
 /*  -------- Title - text -------- */
 
+#logo-hero-img {
+    font-size: 3rem;
+    margin-top: 1.5rem;
+}
+
 .magic_txt .hero-heading {
     font-family: 'Wizard', serif;
     font-size: 2.5rem;
@@ -723,6 +728,10 @@ ul{
 
 /* MEDIA QUERIES */
 @media only screen and (min-width: 768px) {
+    #logo-hero-img {
+        font-size: 6rem;
+        margin-top: 6rem;
+    }
     .magic_txt .hero-heading {
         font-size: 2.6rem;
         line-height: 65px;
@@ -789,6 +798,8 @@ ul{
 
 }
 @media only screen and (min-width: 1024) {
+
+
     .magic_txt .hero-heading {
         font-size: 3rem;
         line-height: 65px;
