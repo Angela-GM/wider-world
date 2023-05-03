@@ -220,7 +220,7 @@ main {
     display:inline-block;
     position: relative;
     margin-right: 10px;
-    letter-spacing: -12px;;
+    letter-spacing: -12px;
     z-index: 1;
 }
 
@@ -484,7 +484,7 @@ ul{
 }
 
 .main_about {
-    padding: 200px 100px 100px 100px;
+    padding: 200px 100px 100px;
     display: flex;
     justify-content: space-around;
     color:white;
