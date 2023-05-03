@@ -86,6 +86,9 @@ Características que se esperan desarrollar en el futuro:
 **https://wider-world.vercel.app/#**
 
 
+[![CodeFactor](https://www.codefactor.io/repository/github/angela-gm/wider-world/badge/main)](https://www.codefactor.io/repository/github/angela-gm/wider-world/overview/main)
+
+
 
 
 
