@@ -342,6 +342,7 @@ main {
     padding: 9px 16px;
     color: #7B7B7B;
     font-size: 13px;
+    box-shadow: none;
     
 
 }
@@ -622,6 +623,7 @@ ul{
     border: 1px solid grey;
     border-radius: 52px;  
     padding: 9px 16px;  
+    box-shadow: none;
 }
 
 .modal-main>form>div>div>label {
@@ -781,27 +783,6 @@ ul{
         font-size: 1rem;
         border: none;
     }
-
-    /* .main_about {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-      }
-    .lib_image {
-        margin-bottom: 20px;
-      }
-    .about_txt {
-        font-size: 1.1rem;
-        text-align: center;
-      }
-    .team_member {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-
-    } */
-
-
 }
 @media only screen and (min-width: 1024) {
 
