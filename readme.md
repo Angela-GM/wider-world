@@ -2,7 +2,7 @@
 
 ## Descripción del proyecto
 
-Wider World és una web donde poder encontrar viajes mágicos a destinos encantados inspirados en tus cuentos de hadas favoritos, como Avatar, Brave, Aladino y Alicia en el País de las Maravillas. 
+Wider World es una web donde poder encontrar viajes mágicos a destinos encantados inspirados en tus cuentos de hadas favoritos, como Avatar, Brave, Aladino y Alicia en el País de las Maravillas. 
 
 Nuestros viajes están diseñados para los entusiastas de los cuentos de hadas que quieren experimentar la maravilla y la magia de estas queridas historias en la vida real.
 
@@ -18,7 +18,7 @@ Página de presentación de la página web.
 
 ### Log in
 
-Tener la opción de crear una cuenta personal i acceder como usuario registrado.
+Tener la opción de crear una cuenta personal y acceder como usuario registrado.
 
 ![mockup](mockup/login.png) 
 
@@ -68,10 +68,12 @@ Hemos utilizado Figma, VSCode como herramientas de diseño y desarrollo y HTML5,
 
 Nos hemos enfrentado a:
 
-- Elección del tema, así como el diseño y distribución de la pàgina web y sus distintas ramas.
+- Elección del tema, así como el diseño y distribución de la página web y sus distintas ramas.
 - Desarrollo del wireframe tanto en Figma como a código posteriormente. 
 - Instalación de fuentes y dar efectos.
 - Prototipado y ajuste en diferentes dispositivos.
+- A trabajar en equipo en git.
+- Manejar los tiempos y disponibilidad de los integrantes del grupo
 
 
 Características que se esperan desarrollar en el futuro:
