@@ -28,6 +28,10 @@ a {
     color: white;
 }
 
+small {
+    font-size: 0.7rem;
+}
+
 /* -------- Body and Main -------- */
 body {
     width: 100%;
@@ -43,7 +47,7 @@ body {
 /* Estilize a barra de rolagem */
 body::-webkit-scrollbar {
     width: 12px;
-  }
+}
 
 body::-webkit-scrollbar-thumb {
 background-color: #555;
@@ -57,7 +61,6 @@ background-color: #383737;
 main {
     font-family: 'Candara', sans-serif;
     font-size: 18px;
-    /* max-width: 1140px; */
     margin: auto 1rem;
 }
 
@@ -74,12 +77,7 @@ main {
 #home-page {
     height: 30%;
 }
-
-
-
-
 /* -------- Navigation bar ------- */
-
 
   .header-main {
     display: flex;
@@ -107,9 +105,6 @@ main {
     background: linear-gradient(0deg, rgba(37, 29, 29, 0.44), rgba(37,29,29,0.44)), 
     url('https://res.cloudinary.com/drjyg98uv/image/upload/v1682682847/wider-world-web/concepto-libro-cuento-hadas-magi_lmmcca.jpg');
     background-position: top;
-    /* background-color: black; */
-    /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15); */
-    /* z-index: 3; */
     margin-bottom: 100%;
   }
 
@@ -134,7 +129,6 @@ main {
 
 .header-main .header-menu a:not(:last-child):hover {
     border-bottom: 2px solid white;
-    /* padding: 10px;     */
 }
 
 .header-main .header-menu .btn-signup {
@@ -152,11 +146,7 @@ main {
 .header-menu>.btn-yellow {
     font-size: 0.8rem;
     border: none;
-
 }
-
-
-
 
 .header-logo h2 {
     color: aliceblue;
@@ -166,8 +156,6 @@ main {
     z-index: 4;
     font-size: 2rem;
 }
-
-
 
 /* -------- main login & signup -------- */
 .main_section .btn-box {
@@ -219,7 +207,6 @@ main {
     position: relative;
     z-index: 1;
     width: 100%;
-    /* text-align: center; */
 }
 
 .magic_txt span {
@@ -300,7 +287,6 @@ main {
   display:block;
 }
 
-
 .main_background{
     background:linear-gradient(0deg, rgba(37, 29, 29, 0.44), rgba(37,29,29,0.44)), 
     url('https://res.cloudinary.com/drjyg98uv/image/upload/v1682682847/wider-world-web/concepto-libro-cuento-hadas-magi_lmmcca.jpg');
@@ -342,9 +328,12 @@ main {
     padding: 9px 16px;
     color: #7B7B7B;
     font-size: 13px;
-    box-shadow: none;
-    
+    box-shadow: none; 
+}
 
+.form-search > input::placeholder, .form-search > input[type="date"]::placeholder {
+    color: hsla(0, 0%, 100%, 0.7);
+    font-size: 12px;
 }
 
 .results {
@@ -356,7 +345,6 @@ main {
 }
 
 .results>.card {
-    /* height:30%; */
     width: 90%;
     background: hsla(0, 0%, 100%, 0.3);
     border-radius: 10px;
@@ -369,15 +357,12 @@ main {
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
     filter: brightness(0.7);
-    z-index: 0;
-   
-
+    z-index: 0; 
 }
 
 .results>.card:hover {
     filter:brightness(1)
 }
-
 
 .results div:nth-child(2){
     padding: 2rem;
@@ -413,9 +398,6 @@ main {
     color: white;
     border: none;
     cursor: pointer;
-
-
-
 }
 
 .btn-cards {
@@ -546,7 +528,6 @@ ul{
     justify-content: center;
     align-items: center;
     position: relative;
-
 }
 
 .team_member img {
@@ -558,8 +539,7 @@ ul{
   }
 
   .team_member img:hover {
-    animation:rotate-center 0.4s
-
+    animation:rotate-center 0.4s;
   }
 
   /* Animation team member */
@@ -607,9 +587,6 @@ ul{
     font-size: bold;
     cursor: pointer;
 }
-
-
-
 .modal-main>form {
     display: flex;
     flex-direction: column;
@@ -631,7 +608,7 @@ ul{
     font-size: 16px;
     line-height: 20px;
 
-   }
+}
 
 .modal-main, .modal-header {
     padding: 2rem;
@@ -649,7 +626,7 @@ ul{
     transform: translate(-50%, -50%);
     display: none;
     z-index: 8;
-  }
+}
 
   #cancel-btn {
     background: #FFFFFF;
@@ -658,12 +635,11 @@ ul{
     padding: 6px 24px;
     border: none;
     cursor: pointer;
-  }
+}
 
   #cancel-btn:hover {
     border: 1px solid black;
-  }
-
+}
 
 
 /* overlay */
@@ -677,8 +653,6 @@ ul{
     display: none;
     z-index: 4;
   }
-
-
 
 /* DETAIL */
 /*  ---------------------TRIP DETAIL PAGE-------------------------- */
@@ -702,7 +676,7 @@ ul{
 .alice-img-det {
     /* width: 60%; */
     margin-right: 30px;
-  }
+}
   
 .lib_image img{
     width: 100%;
@@ -718,7 +692,7 @@ ul{
     border-radius: 10px; /* Rounded corners */
     padding: 30px; /* Adds padding inside the box */
     overflow: hidden;
-  }
+}
 
 .content h1 {
     font-family: 'Wizard', serif;
@@ -726,9 +700,7 @@ ul{
 
   .btn-book {
     margin: 20px;
-  }
-
-
+}
 
 /* MEDIA QUERIES */
 @media only screen and (min-width: 768px) {
@@ -802,10 +774,6 @@ ul{
    
         width: 20%;
     }
-
-
-
-
 }
 
 @media only screen and (min-width: 1440px) {
@@ -816,9 +784,6 @@ ul{
    
         width: 20%;
     }
-
-
-
 
 }
 
