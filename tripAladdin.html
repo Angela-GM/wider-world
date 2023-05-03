@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Group 4">
+    <meta name="description" content="Project: Travel Agency">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />     
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Preload Fonts -->
+    
+    <link
+		rel="preload"
+		href="./fonts/wizard/WizardWorld-Simplified.ttf"
+		as="font"
+		type="font/ttf"
+		crossOrigin="anonymous">
+	  </link>
+    <link
+		rel="preload"
+		href="./fonts/candara/Candara.ttf"
+		as="font"
+		type="font/ttf"
+		crossOrigin="anonymous">
+	  </link>
+    <title>Wider World - Aladdin</title>
+    <!-- logo icon en la barra de titulo -->
+    <link rel="icon" href="img/icon_w.png"> 
+  </head>
+  <body>
+    <!-- ------BACKGROUND NAVBAR COVER------- -->
+    <section class="cover_bk">
+        <div class="black_navbar"></div>
+    </section>
+    <!-- ----------HEADER NAVBAR--------- -->
+    <div class="navbar">
+        <header class="header-main">
+          <div class="header-logo">
+            <h2>
+              <a href="./home.html">Wider World</a>
+            </h2>
+            <!-- <img src="./img/logo-wider-world.png" alt="Logo Wider World" /> -->
+          </div>
+          <nav class="header-menu">
+            <a href="./about.html">About</a>
+            <a href="#">LogIn</a>
+            <a href="#" class="btn-yellow">Sign Up</a>
+          </nav>
+        </header>
+    </div>
+    <!-- ----------MAIN--------- -->
+    <main id="detail-page">
+        <container class="alice-img-det">
+            <div class="alice-card">
+                <img src="https://res.cloudinary.com/drjyg98uv/image/upload/v1683032127/wider-world-web/brave-web_emnrqf.png" alt="brave picture">
+                <div class="infoPlusBook">
+                    
+
+
+
+                    <p>2 day trip</p>
+                    <p>1-6 passengers</p>
+                    <p>1200€ <small>price per person</small>
+                        </p>
+                </div>
+            </div>
+        </container>
+
+        <container class="content">
+            <h1>ALADDIN</h1><br>
+            <p>Experience the magic of Aladdin's world with our exciting marketing trip! </p><br>
+            <p>From , our Aladdin-inspired journey promises an unforgettable and enchanting adventure for the whole family.
+
+            </p><br>
+            <p>Here's a brief overview of some of the key events in Aladdin's trip:
+
+            </p>
+                <ul>
+                    <li> Walk the bustling streets and markets</li>
+                    <li>Taste exotic foods</li>
+                    <li>Flying on magic carpets to exploring mystical caves</li>
+                </ul>
+            <div class="btn-book">
+                <a href="#"  id="btn-book" class="btn-yellow">Book now</a>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+            <script>
+                var defaults = {
+                  spread: 360,
+                  ticks: 50,
+                  gravity: 0,
+                  decay: 0.94,
+                  startVelocity: 30,
+                  shapes: ['star'],
+                  colors: ['FFE400', 'FFBD00', 'E89400', 'FFCA6C', 'FDFFB8']
+                };
+                
+                function shoot() {
+                  confetti({
+                    ...defaults,
+                    particleCount: 40,
+                    scalar: 1.2,
+                    shapes: ['star']
+                  });
+                
+                  confetti({
+                    ...defaults,
+                    particleCount: 10,
+                    scalar: 0.75,
+                    shapes: ['circle']
+                  });
+                }
+                
+                document.getElementById("btn-book").addEventListener("click", function() {
+                  shoot();
+                });
+                </script>
+        </container>
+    </main>
+
+   <!-- Footer -->
+   <footer id="contact">
+    <div class="header-logo">
+        <h2>Wider World</h2>
+    <div class="container"> 
+        <ul>
+            <li><a href="tel:+34764536434">+34 764536434</a>
+              </li>
+            <li><a href="mailto:contact@widerworld.com">contact@widerworld.com</a>
+              </ul>
+            <li>About Us</li>
+            <li>FAQs</li>
+            <li>Terms &amp; Conditions</li>
+            <li>Privacy &amp; Cookies</li>
+        </ul>
+        <div class="social">
+          <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+      <div class="copyright">
+        <p>&copy; WIDER WORLD DIGITAL 2023</p>
+      </div>
+    </div>
+  </footer>
+    </body>
+</html>
