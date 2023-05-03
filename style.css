@@ -301,7 +301,7 @@ main {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    height: 35%;
+    height: 40%;
     padding-bottom: 2rem;
     position: fixed;
 }
@@ -341,7 +341,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    margin-top: 3rem;
+    margin-top: 7rem;
 }
 
 .results>.card {
