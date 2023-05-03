@@ -355,6 +355,7 @@ main {
 
 .results>.card {
     /* height:30%; */
+    width: 90%;
     background: hsla(0, 0%, 100%, 0.3);
     border-radius: 10px;
     display: flex;
@@ -770,6 +771,10 @@ ul{
     .results {
         margin-top: -1rem;
     }
+    .results>.card {
+   
+        width: 30%;
+    }
 
     .header-menu>.btn-yellow {
         font-size: 1rem;
@@ -811,6 +816,10 @@ ul{
         width: 60%;
         padding-top: 25%;
     }
+    .results>.card {
+   
+        width: 20%;
+    }
 
 
 
@@ -820,6 +829,10 @@ ul{
 @media only screen and (min-width: 1440px) {
     .main_section {
         width: 70%;
+    }
+    .results>.card {
+   
+        width: 20%;
     }
 
 
