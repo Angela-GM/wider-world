@@ -152,6 +152,7 @@ main {
 .header-menu>.btn-yellow {
     font-size: 0.8rem;
     border: none;
+
 }
 
 
@@ -314,7 +315,7 @@ main {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    height: 30%;
+    height: 35%;
     padding-bottom: 2rem;
     position: fixed;
 }
@@ -387,7 +388,7 @@ main {
     height: 100%;
 }
 .image>img {
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
